@@ -3,13 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    margin-bottom: 0.5em;
+.attribution {
+    font-size: 11px;
+    text-align: center;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+@media (min-width: 480px) {
+    .attribution {
+        margin-top: -50px;
+    }
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 body {
     background-color: hsl(212, 45%, 89%);
@@ -27,7 +31,18 @@ body {
     flex-direction: column;
     margin: 5.5em 1.6em 4em;
     border-radius: 20px;
+    flex-grow: 1;
+    height: 90%;
+    width: 80%;
 }
+@media (min-width: 480px) {
+    .content {
+        height: 50%;
+        width: 55%;
+        margin: 8em auto;
+    }
+}
+
 #qr-code {
     width: 90%;
     height: 48%;
